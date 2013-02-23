@@ -1,0 +1,46 @@
+{
+  "name": "assemble-bootstrap",
+  "description": "Build system for Bootstrap, the sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+  "version": "0.1.0",
+  "keywords": [
+    "assemble",
+    "bootstrap",
+    "less",
+    "css"
+  ],
+  "homepage": "http://assemble.github.com/assemble/",
+  "author": "Assemble",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/assemble-bootstrap.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sellside/assemble/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "amdefine": "0.0.4",
+    "handlebars": "~1.0.9",
+    "lodash": "~1.0.1",
+    "js-yaml": "~2.0.2",
+    "marked": "~0.2.8",
+    "highlight.js": "~7.3.0"
+  },
+  "devDependencies": {
+    "assemble": "~0.3.6",
+    "chai": "~1.5.0",
+    "grunt": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-mocha-test": "~0.2.0",
+    "grunt-release": "~0.2.0",
+    "testem": "~0.2.68"
+  }
+}

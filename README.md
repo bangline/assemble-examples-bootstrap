@@ -1,4 +1,10 @@
-assemble-bootstrap
-==================
+# Assemble Twitter Bootstrap
 
-Alternative to Jekyll for Twitter Bootstrap.
+
+Gruntfile runs the following tasks:
+
+
+  * `jshint`
+  * `less` / `recess`
+  * `assemble`
+  * `copy`
