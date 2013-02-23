@@ -3,21 +3,30 @@
 </a>
 
 
-# [Assemble Bootstrap v3.0.0](assemble-bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
+## THIS DOESN'T WORK YET, SO DON'T TRY TO USE IT!!!
 
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
+We're adding an engine to [Assemble]([assemble) to compile `liquid` so that you can just drop this in as a replacement to Jekyll and stay compatible with future versions of Bootstrap. If this sounds interesting to you, make sure you star the repo to stay updated on when it's ready.
 
-  * To get started with Assemble, checkout [http://github.com/assemble/assemble]([assemble)!
-  * To get started with Bootstrap, checkout [http://getbootstrap.com](http://getbootstrap.com)!
 
+# [Assemble Bootstrap v3.0.0](assemble-bootstrap) [![Build Status](https://secure.travis-ci.org/assemble/assemble-bootstrap.png)](http://travis-ci.org/assemble/assemble-bootstrap)
+
+**Bootstrap** is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
+
+To get started with Bootstrap, checkout [http://getbootstrap.com](http://getbootstrap.com)!
+
+
+
+**Assemble** _makes you faster at launching web projects_, using only basic HTML and CSS, or get more advanced with UI components, project scaffolds, client-side templates, mock-data, CSS pre-processors, markdown, YAML, JSON, sensible configuration defaults and a Grunt.js build system to make it work. Created and maintained by [Brian Woodward](http://twitter.com/doowb) and [Jon Schlinkert](http://twitter.com/jonschlinkert).
+
+To get started with Assemble, checkout [http://github.com/assemble/assemble]([assemble)!
 
 
 ## Quick start
 
 Three quick start options are available:
 
-* [Download the latest release](https://github.com/twitter/bootstrap/zipball/master).
-* Clone the repo: `git clone git://github.com/twitter/bootstrap.git`.
+* [Download the latest release](http://github.com/assemble/assemble-bootstrap/zipball/master).
+* Clone the repo: `git clone git://github.com/assemble/assemble-bootstrap.git`.
 * Install with Twitter's [Bower](http://twitter.github.com/bower): `bower install bootstrap`.
 
 Read the [Getting Started page](http://getbootstrap.com/getting-started/) for information on the framework contents, basic template guidelines, and more.
@@ -26,21 +35,44 @@ Read the [Getting Started page](http://getbootstrap.com/getting-started/) for in
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? [Please open a new issue](https://github.com/twitter/bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
+Have a bug or a feature request? [Please open a new issue](http://github.com/assemble/assemble-bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 
 
 
 ## Documentation
 
-Bootstrap's docs are built using [Jekyll](http://jekyllrb.com) and hosted on GitHub Pages at [http://getbootstrap.com](http://getbootstrap.com). To view our docs locally, you'll need to [install Jekyll](https://github.com/mojombo/jekyll/wiki/install) to run a local server.
+Assemble replaces Jekyll for building Bootstrap's docs, so there is no need to run a server to view the docs.
 
-Documentation for [previous versions](https://github.com/twitter/bootstrap/tags) is also available via tags.
+
+## Task Options & Configuration
+
+Read Assemble's [Getting Started page](https://github.com/assemble/assemble/wiki/getting-started/) for information on using configuration files, templates, scaffolds, themes, and more.
+
+
+``` js
+assemble: {
+  options: {
+    data: ['config/bootstrap.json', 'config/defaults.json']
+  },
+  files: {
+    'dest': ['src/files/*.hbs']
+  }
+}
+```
+
+#### data - `bootstrap.json`
+Contains metadata from Bootstrap's `package.json` (since assemble-bootstrap uses its own package.json), as well as a few additional configuration defaults for this project.
+
+####
+
+
 
 
 
 ## Compiling CSS and JavaScript
 
-Bootstrap includes a [Gruntfile](Gruntfile) with convenient methods for working with the framework. Before getting started, be sure to install [the necessary local dependencies](package.json):
+`assemble-bootstrap` includes a [Gruntfile](Gruntfile) with convenient tasks for working with the framework. Before getting started, be sure to install [the necessary local dependencies](package.json):
+
 
 ```
 $ npm install
@@ -120,6 +152,36 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 
 ## Copyright and license
+
+**assemble-bootstrap license**
+
+Copyright 2012 Assemble.
+
+  [MIT License](http://github.com/assemble/assemble-bootstrap/LICENSE-MIT)
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+**Bootstrap License**
 
 Copyright 2012 Twitter, Inc.
 
